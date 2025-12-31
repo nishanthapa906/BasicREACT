@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
@@ -16,6 +16,7 @@ import Register from '../pages/Register'
 
 function App() {
   return (
+    <Router>
     <div className='nav'>
       <Header/>
       <Routes>
@@ -30,7 +31,43 @@ function App() {
       </Routes>
       
     </div>
-  )
+    </Router>
+  );
 }
 
 export default App
+
+
+
+// import React from 'react';
+// import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
+// import Home from '../pages/Home';
+// import About from '../pages/About';
+// import Contact from '../pages/Contact';
+// import Login from '../pages/Login';
+// import Product from '../pages/Product';
+// import Register from '../pages/Register';
+// import PageNotFound from '../pages/PageNotFound';
+// import Header from '../components/Header';
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className='nav'>
+//         <Header />
+//         <Routes>
+//           <Route path='/' element={<Home />} />
+//           <Route path='/about' element={<About />} />
+//           <Route path='/contact' element={<Contact />} />
+//           <Route path='/login' element={<Login />} />
+//           <Route path='/product' element={<Product />} />
+//           <Route path='/register' element={<Register />} />
+//           <Route path='*' element={<PageNotFound />} />
+//         </Routes>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
