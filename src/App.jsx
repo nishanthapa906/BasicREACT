@@ -8,6 +8,7 @@ import Login from '../pages/Login'
 import Product from '../pages/Product'
 import PageNotFound from '../pages/PageNotFound'
 import Header from '../components/Header'
+import Register from '../pages/Register'
 
 
 
@@ -24,6 +25,8 @@ function App() {
         <Route path = '/login' element = {<Login/>}></Route>
         <Route path = '/product' element = {<Product/>}></Route>
         <Route path = '*' element = {<PageNotFound/>}></Route>
+        <Route path = '/register' element = {<Register/>}></Route>
+        
       </Routes>
       
     </div>

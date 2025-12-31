@@ -1,0 +1,35 @@
+.about-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  color: #333;
+  height: 930px;
+}
+
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-section h1 {
+  font-size: 42px;
+  color: #ff5545;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  list-style: square;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.about-section li {
+  margin-bottom: 10px;
+}

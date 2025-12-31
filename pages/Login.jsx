@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Login() {
   // Step 2: create state
@@ -17,9 +18,9 @@ function Login() {
   return (
     <div style={styles.container}>
       <form style={styles.card} onSubmit={handleSubmit}>
-        <h2>Sign in with email</h2>
+        <h2>Sign in with E-mail</h2>
 
-        <input
+        <input 
           type="email"
           placeholder="Email"
           value={email}
@@ -27,7 +28,7 @@ function Login() {
           style={styles.input}
         />
 
-        <input
+        <input 
           type="password"
           placeholder="Password"
           value={password}
@@ -38,6 +39,9 @@ function Login() {
         <button type="submit" style={styles.button}>
           Get Started
         </button>
+        <NavLink to = '/register'  style={styles.button1}> Register</NavLink>
+
+         
       </form>
     </div>
   );
@@ -48,31 +52,67 @@ export default Login;
 //styles
 const styles = {
   container: {
-    height: "100vh",
+    height: "90vh",
     display: "flex",
+    margin: "auto",
     justifyContent: "center",
     alignItems: "center",
     background: "#eaf6ff",
+    padding: "200px",
+    marginLeft: "0px",
+   
+   
+    
   },
   card: {
-    background: "#fff",
-    padding: "30px",
-    borderRadius: "12px",
-    width: "300px",
+    background: "#87aee0ff",
+    padding: "50px",
+    borderRadius: "30px",
+    width: "100%",
+    maxWidth: "470px",
+    // height:"360px",
     textAlign: "center",
-    boxShadow: "0 5px 20px rgba(0,0,0,0.1)",
+    boxShadow: "0 10px 20px rgba(10, 194, 199, 100)",
+    fontsize: "16px",
+
   },
   input: {
+    marginTop:"30px",
     width: "100%",
     padding: "10px",
     margin: "10px 0",
+    fontWeight: "bold",
+    fontsize:"16px",
+    borderRadius:"20px",
   },
   button: {
+    marginTop:"20px",
     width: "100%",
     padding: "10px",
-    background: "#000",
+    background: "#1a66a5ff",
     color: "#fff",
     border: "none",
     cursor: "pointer",
+    marginBottom: "15px",
+    fontWeight:"bold",
+    fontsize: "16px",
+    borderRadius:"20px",
   },
+
+
+button1: {
+  
+  margin: "auto ",
+  width:"100px",
+  padding: "10px",
+  background: "#35c228ff",
+  color: "#fff",
+  border: "none",
+  cursor: "pointer",
+  fontWeight:"bold",
+  display:"block",
+  border:"2px solid white",
+  borderRadius:"20px"
+},
+
 };
